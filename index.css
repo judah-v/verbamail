@@ -1,0 +1,21 @@
+.hidden {
+    visibility: hidden;
+    position: relative;
+    width: 100px;
+    right: -55px;
+    transition: right .5s;
+}
+.slide-in {
+    visibility: visible;
+    right: 0;
+}
+body {
+    background-color: rgb(3, 18, 35);
+}
+#main {
+    box-shadow: 0 0 15px rgb(7, 176, 164)
+}
+h1 {
+    font-family: 'Queensides', sans-serif;
+    font-weight: normal;
+}

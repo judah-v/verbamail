@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="mail_icon2.png" type="image/png">
+    <title>Verba-Mail</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/75c023a02f.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.cdnfonts.com/css/queensides" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <script src="email.js" defer></script>
+
+</head>
+<body>
+    <div id="main" class="container-fluid bg-dark text-light rounded my-3 p-4" style="width: 90vw; height: 95vh; overflow: scroll;">
+        <h1 class="text-center my-1">Verba-Mail</h1>
+        <p class="fs-3 my-5" id="display">"Write an e-mail to... "</p>
+        <div class="container d-block d-sm-inline-flex justify-content-center">
+
+            <div id="navBox" class="col-sm-4 col-lg-5 my-3 justify-content-end d-inline-flex" style="min-width: 315px;">
+                
+                <button id="recordBtn" title="Start recording" class="btn btn-outline-primary mx-1">Record</button>
+
+                <button id="generateBtn" title="Generate email" class="btn btn-outline-primary mx-1">Generate</button>
+
+                <button id="sendBtn" title="Send" class="btn btn-outline-dark bg-success rounded-circle ms-1 me-5 ps-2 px-auto" height="150px"><i class="fa-regular fa-paper-plane fa-lg"></i></button>
+
+            </div>
+        
+            <div class="col-sm-6 col-lg-5 d-inline-flex" style="min-width: 315px;">
+
+                <select id="select" title="Select language" class="rounded bg-secondary-subtle my-3"></select>
+                
+                <button id="addLanguageBtn" title="Add new language" class="btn btn-outline-primary rounded-circle mx-2 py-auto px-auto my-3" height="150px"><i class="fa fa-solid fa-plus fa-s"></i></button>
+
+                <form id="navForm" class="d-inline-flex">
+                    <input type="text" class="form-control hidden ms-1 my-3">
+                </form>
+
+            </div>
+        </div>
+        <input id="recipientBox" type="text" class="form-control my-2" placeholder="Recipient address">
+        <input id="subjectBox" type="text" class="form-control my-2" placeholder="Subject">
+        <textarea name="text" class="form-control w-100 h-75 m-auto" id="messageBox" placeholder="Message body"></textarea>
+    </div>
+</body>
+</html>
